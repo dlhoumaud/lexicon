@@ -1,1 +1,3 @@
 # lexicon
+
+`php lexicon.php`
