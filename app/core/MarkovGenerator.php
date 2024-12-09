@@ -41,11 +41,11 @@ class MarkovGenerator
 
     public function getModel(): array {
         return $this->model;
-    }
+    } 
 
     public function setModel(array $model): void {
         $this->model = $model; // Charge un modèle depuis un tableau PHP
-    }
+    } 
 
     public function generateText(string $startPhrase, int $length): string
     {
@@ -78,7 +78,7 @@ class MarkovGenerator
         return $finalText;
     }
 
-    public function generateAnswer(string $question, int $limit): string
+    public function generateAnswer(string $question, int $limit=25): string
     {
         // Vérifier si la question est valide (doit finir par un ?)
         if (empty($question) || substr(trim($question), -1) !== '?') {
